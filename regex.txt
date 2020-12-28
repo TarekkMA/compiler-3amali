@@ -1,0 +1,24 @@
+## Some RegEx rules
+
+.			      match any character except newline
+[abv]		    match any of a or b or v
+[a-f]		    match anything from a to f
+[a-mG-Z]		match anything from a to m or from G to Z
+[a\-x]      match a, -, or x
+[A,Z,10]    match A, ',', Z, 1, 0
+"[amGz]"		match the literal string “[amGz]”
+[amGz]		  match a, m, G, or z
+[^abc-z]		match anything not a or b or from c to z
+X+			    match X one or more times
+X*			    match X zero or more times
+Z?			    Match Z zero or one time
+Q{5}			  Match Q five times
+Q{2,4}		  Match Q two to four times
+M{4,}		    Match M more than or equal 4 times
+Z|X			    Match Z or X
+ZX			    Match Z followed by X
+^q			    Match q at the beginning of a line
+q$			    Match q at the end of the line
+^abc$		    Match the line that contains only “abc”
+
+#Lex Expression Expansion
